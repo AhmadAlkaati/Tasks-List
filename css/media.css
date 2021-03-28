@@ -1,0 +1,15 @@
+@media (max-width: 700px) {
+  main .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  main .container .tasks-input-div {
+    margin: 0;
+  }
+  main .container header h1 {
+    font-size: 27px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

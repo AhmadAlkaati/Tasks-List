@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: gainsboro;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+main {
+  margin-top: 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  border: #d3cbcb 3px solid;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  background: darkgrey;
+  box-shadow: 0px 0px 5px 2px grey;
+}
+
+main .container h1 {
+  color: #0aa5a5;
+  color: #037777;
+  border-radius: 5px;
+}
+
+main .container header h1 {
+  color: #037777;
+  letter-spacing: 1px;
+}
+
+main .container header:nth-child(3) {
+  margin-top: 1rem;
+}
+
+main .container .tasks-input-div,
+main .container .tasks-list-div {
+  margin: 1rem 0;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+main .container .tasks-input-div input,
+main .container .tasks-list-div input {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #000;
+  padding: 1rem;
+}
+
+main .container .tasks-input-div label,
+main .container .tasks-list-div label {
+  position: absolute;
+  top: 1rem;
+  color: #757568;
+  transition: all 0.3s;
+  cursor: text;
+  pointer-events: none;
+}
+
+main .container .tasks-input-div input:focus,
+main .container .tasks-input-div input:valid,
+main .container .tasks-list-div input:focus,
+main .container .tasks-list-div input:valid {
+  border-bottom: 2px solid #037777;
+}
+
+main .container .tasks-input-div input:focus + label,
+main .container .tasks-input-div input:valid + label,
+main .container .tasks-list-div input:focus + label,
+main .container .tasks-list-div input:valid + label {
+  top: 0;
+  color: #037777;
+  font-size: 70%;
+}
+
+main .container .tasks-input-div button,
+main .container .tasks-list-div button {
+  padding: 1rem;
+  width: 150px;
+  font-size: 15px;
+  color: white;
+  background: #037777;
+  border-radius: 5px;
+}
+
+main .container .tasks-input-div p,
+main .container .tasks-list-div p {
+  font-size: 12px;
+  color: #000;
+}
+
+main .container .tasks-list-div button {
+  background: #000;
+}
+
+main .container ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+main .container ul li {
+  border-bottom: 1px solid #b9b7b7;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000;
+  position: relative;
+}
+
+main .container ul li a {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+main .container ul li a i {
+  color: #037777;
+}
+
+main .container ul .remove-task {
+  display: none;
+}
+
+main .social {
+  position: relative;
+  top: 2rem;
+}
+
+main .social a {
+  color: #037777;
+}
+/*# sourceMappingURL=style.css.map */
